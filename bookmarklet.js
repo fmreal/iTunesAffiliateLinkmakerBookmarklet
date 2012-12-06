@@ -27,12 +27,12 @@ javascript:(function(){
         alert("アプリ情報を取得できません。");return;
       } else {
         d = json.results[0];
-        var copypa = "<aside class='appstore'><div class='cf'><figure><a href='" +
+        var copypa = "<aside class='appstore'><div class='appstore_cf'><figure><a href='" +
                    aflink + "' rel='nofollow' target='itunes_store'><img src='" +
                    d.artworkUrl60 + "' width='75' alt='" +
                    d.trackName + "'></a></figure><div class='appstore_dv'><h4><a href='" +
                    aflink + "' rel='nofollow'>" +
-                   d.trackName + " <img src='http://s.mzstatic.com/htmlResources/E6C6/web-storefront/images/viewinitunes_jp.png' alt='iTunesで見る' width='90'></a></h4><dl><dt>カテゴリ：</dt><dd>" +
+                   d.trackName + " <img src='/images/viewinitunes_jp.png' alt='iTunesで見る' width='95' height='23'></a></h4><dl><dt>カテゴリ：</dt><dd>" +
                    d.genres.join(', ') + "</dd><dt>掲載時の価格：</dt><dd>" +
                    d.formattedPrice + "</dd><dt>販売会社：</dt><dd><a href='" +
                    d.artistViewUrl + "' rel='nofollow'>" +
